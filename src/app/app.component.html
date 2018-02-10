@@ -28,10 +28,10 @@
 
         <div class="grid__item" *ngFor="let item of photoContent">
           <div class="square">
-            <img class="square__pic" src="/images/west/silver.jpg" alt="">
+            <img class="square__pic" src="{{item.img}}" alt="">
           </div>
           <div class="grid__item-info">{{item.showText}}</div>
-          <div class="grid__item-infohide">The South Falls</div>
+          <div class="grid__item-infohide">{{item.hideText}}</div>
         </div>
       </div>
     </div>

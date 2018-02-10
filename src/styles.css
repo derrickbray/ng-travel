@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: #EEEEEE;
+  font-family: 'Roboto Slab', serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
