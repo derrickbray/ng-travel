@@ -15,7 +15,7 @@ export class TravelsComponent implements OnInit {
   photoContent =
   [
     {
-      id: '1', img: 'assets/west/silver.jpg',
+      id: 1, img: 'assets/west/silver.jpg',
       default: true,
       state: 'OR',
       region: 'West',
@@ -23,7 +23,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'The South Falls'
     },
     {
-      id: '2', img: 'assets/east/ny-night.jpg',
+      id: 2, img: 'assets/east/ny-night.jpg',
       default: true,
       state: 'NY',
       region: 'East',
@@ -31,7 +31,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'View from top of the Empire State Building'
     },
     {
-      id: '3', img: 'assets/between/mesa-verde.jpg',
+      id: 3, img: 'assets/between/mesa-verde.jpg',
       default: true,
       state: 'CO',
       region: 'Between',
@@ -39,7 +39,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'The Cliff Palace'
     },
     {
-      id: '4', img: 'assets/west/weird.jpg',
+      id: 4, img: 'assets/west/weird.jpg',
       default: true,
       state: 'OR',
       region: 'West',
@@ -47,7 +47,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Near the original Voodoo Doughnuts'
     },
     {
-      id: '5', img: 'assets/between/valley-fire.jpg',
+      id: 5, img: 'assets/between/valley-fire.jpg',
       default: true,
       state: 'NV',
       region: 'Between',
@@ -55,7 +55,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'The Ocean bottom from millions of years ago'
     },
     {
-      id: '6', img: 'assets/east/ny-bridge.jpg',
+      id: 6, img: 'assets/east/ny-bridge.jpg',
       default: true,
       state: 'NY',
       region: 'East',
@@ -63,7 +63,7 @@ export class TravelsComponent implements OnInit {
       hideText: "That's a Famous Bridge"
     },
     {
-      id: '7', img: 'assets/between/grand-canyon.jpg',
+      id: 7, img: 'assets/between/grand-canyon.jpg',
       default: true,
       state: 'AZ',
       region: 'Between',
@@ -71,7 +71,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'View from the South Rim'
     },
     {
-      id: '8', img: 'assets/between/deethstar.jpg',
+      id: 8, img: 'assets/between/deethstar.jpg',
       default: true,
       state: 'NV',
       region: 'Between',
@@ -79,7 +79,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'I guess if you live in the middle of nowhere you can call it whatever you want'
     },
     {
-      id: '9', img: 'assets/between/nowhere.jpg',
+      id: 9, img: 'assets/between/nowhere.jpg',
       default: true,
       state: 'NE',
       region: 'Between',
@@ -87,7 +87,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Embrace the feeling'
     },
     {
-      id: '10', img: 'assets/east/ny-port.jpg',
+      id: 10, img: 'assets/east/ny-port.jpg',
       default: true,
       state: 'NY',
       region: 'East',
@@ -95,7 +95,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'From Liberty Island'
     },
     {
-      id: '11', img: 'assets/between/valley-road.jpg',
+      id: 11, img: 'assets/between/valley-road.jpg',
       default: true,
       state: 'AZ',
       region: 'Between',
@@ -103,7 +103,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'On the way to the Grand Canyon'
     },
     {
-      id: '12', img: 'assets/between/rocky.jpg',
+      id: 12, img: 'assets/between/rocky.jpg',
       default: true,
       state: 'CO',
       region: 'Between',
@@ -111,7 +111,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Exactly what you think the Pacific should be'
     },
     {
-      id: '13', img: 'assets/west/grain.jpg',
+      id: 13, img: 'assets/west/grain.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -119,7 +119,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Downtown near Riverfront Park'
     },
     {
-      id: '14', img: 'assets/west/billy-chinnok.jpg',
+      id: 14, img: 'assets/west/billy-chinnok.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -127,7 +127,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Water does not mess around'
     },
     {
-      id: '15', img: 'assets/east/niagra2.jpg',
+      id: 15, img: 'assets/east/niagra2.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -135,7 +135,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'The only time Canada seems trashy, (like putting a McDonalds on the side on the Grand Canyon)'
     },
     {
-      id: '16', img: 'assets/between/nebr.jpg',
+      id: 16, img: 'assets/between/nebr.jpg',
       default: false,
       state: 'NE',
       region: 'Between',
@@ -143,7 +143,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'I love the pink granite'
     },
     {
-      id: '17', img: 'assets/between/arch.jpg',
+      id: 17, img: 'assets/between/arch.jpg',
       default: false,
       state: 'NV',
       region: 'Between',
@@ -151,7 +151,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Arch Rock'
     },
     {
-      id: '18', img: 'assets/between/butte-road.jpg',
+      id: 18, img: 'assets/between/butte-road.jpg',
       default: false,
       state: 'AZ',
       region: 'Between',
@@ -159,7 +159,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'On the way to the Grand Canyon'
     },
     {
-      id: '19', img: 'assets/between/butte.jpg',
+      id: 19, img: 'assets/between/butte.jpg',
       default: false,
       state: 'WY',
       region: 'Between',
@@ -167,7 +167,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'On the way to SLC'
     },
     {
-      id: '20', img: 'assets/between/mesa-verde2.jpg',
+      id: 20, img: 'assets/between/mesa-verde2.jpg',
       default: false,
       state: 'CO',
       region: 'Between',
@@ -175,7 +175,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'In the Cliff Palace'
     },
     {
-      id: '21', img: 'assets/between/monument.jpg',
+      id: 21, img: 'assets/between/monument.jpg',
       default: false,
       state: 'AZ',
       region: 'Between',
@@ -183,7 +183,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Near Monument Valley'
     },
     {
-      id: '22', img: 'assets/between/motel.jpg',
+      id: 22, img: 'assets/between/motel.jpg',
       default: false,
       state: 'WY',
       region: 'Between',
@@ -191,7 +191,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'This motel still uses keys, no keycards'
     },
     {
-      id: '23', img: 'assets/between/rock-art.jpg',
+      id: 23, img: 'assets/between/rock-art.jpg',
       default: false,
       state: 'NV',
       region: 'Between',
@@ -199,7 +199,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Petroglyphs at Atlatl Rock'
     },
     {
-      id: '24', img: 'assets/between/salt-flat.jpg',
+      id: 24, img: 'assets/between/salt-flat.jpg',
       default: false,
       state: 'UT',
       region: 'Between',
@@ -207,7 +207,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Whole lot of nothing'
     },
     {
-      id: '25', img: 'assets/between/smokycreek.jpg',
+      id: 25, img: 'assets/between/smokycreek.jpg',
       default: false,
       state: 'TN',
       region: 'Between',
@@ -215,7 +215,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Gatlinburg is beautiful -- away from the strip'
     },
     {
-      id: '26', img: 'assets/between/utah-cap.jpg',
+      id: 26, img: 'assets/between/utah-cap.jpg',
       default: false,
       state: 'UT',
       region: 'Between',
@@ -223,7 +223,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'State Capital Building SLC'
     },
     {
-      id: '27', img: 'assets/between/utah.jpg',
+      id: 27, img: 'assets/between/utah.jpg',
       default: false,
       state: 'UT',
       region: 'Between',
@@ -231,7 +231,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'The hills east of SLC'
     },
     {
-      id: '28', img: 'assets/between/valley-fire2.jpg',
+      id: 28, img: 'assets/between/valley-fire2.jpg',
       default: false,
       state: 'NV',
       region: 'Between',
@@ -239,7 +239,7 @@ export class TravelsComponent implements OnInit {
       hideText: "The Valley of Fire is the most desolate place I've ever seen"
     },
     {
-      id: '29', img: 'assets/between/vegas-tower.jpg',
+      id: 29, img: 'assets/between/vegas-tower.jpg',
       default: false,
       state: 'NV',
       region: 'Between',
@@ -247,7 +247,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Paris in America'
     },
     {
-      id: '30', img: 'assets/between/zion.jpg',
+      id: 30, img: 'assets/between/zion.jpg',
       default: false,
       state: 'UT',
       region: 'Between',
@@ -255,7 +255,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Watchman Mountain'
     },
     {
-      id: '31', img: 'assets/east/bear.jpg',
+      id: 31, img: 'assets/east/bear.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -263,7 +263,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Curious little bear'
     },
     {
-      id: '32', img: 'assets/east/camp-falls.jpg',
+      id: 32, img: 'assets/east/camp-falls.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -271,7 +271,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'I forgot the name of these falls'
     },
     {
-      id: '33', img: 'assets/east/capital.jpg',
+      id: 33, img: 'assets/east/capital.jpg',
       default: false,
       state: 'DC',
       region: 'East',
@@ -279,7 +279,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'My wife holding up the government'
     },
     {
-      id: '34', img: 'assets/east/catskills.jpg',
+      id: 34, img: 'assets/east/catskills.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -287,7 +287,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'View from the North Dome of Saddle Mountain'
     },
     {
-      id: '35', img: 'assets/east/grand-central.jpg',
+      id: 35, img: 'assets/east/grand-central.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -295,7 +295,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Grand Central Station'
     },
     {
-      id: '36', img: 'assets/east/montecello.jpg',
+      id: 36, img: 'assets/east/montecello.jpg',
       default: false,
       state: 'VA',
       region: 'East',
@@ -303,7 +303,7 @@ export class TravelsComponent implements OnInit {
       hideText: "Thomas Jefferson's Monticello"
     },
     {
-      id: '37', img: 'assets/east/ny-empire.jpg',
+      id: 37, img: 'assets/east/ny-empire.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -311,7 +311,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Empire State Building'
     },
     {
-      id: '38', img: 'assets/east/camp-ndome.jpg',
+      id: 38, img: 'assets/east/camp-ndome.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -319,7 +319,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'View of the North Dome of Saddle Mountain'
     },
     {
-      id: '39', img: 'assets/east/ny-liberty.jpg',
+      id: 39, img: 'assets/east/ny-liberty.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -327,7 +327,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Lady Liberty'
     },
     {
-      id: '40', img: 'assets/east/niagra.jpg',
+      id: 40, img: 'assets/east/niagra.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -335,7 +335,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'In line for the Hurricane Deck at the Cave of the Winds, Niagra Falls'
     },
     {
-      id: '41', img: 'assets/east/ny-library.jpg',
+      id: 41, img: 'assets/east/ny-library.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -343,7 +343,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'New York Public Library'
     },
     {
-      id: '42', img: 'assets/east/ny-skyline.jpg',
+      id: 42, img: 'assets/east/ny-skyline.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -351,7 +351,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Lower Manhattan'
     },
     {
-      id: '43', img: 'assets/east/penn.jpg',
+      id: 43, img: 'assets/east/penn.jpg',
       default: false,
       state: 'DC',
       region: 'East',
@@ -359,7 +359,7 @@ export class TravelsComponent implements OnInit {
       hideText: '1600 Pennsylvania Ave'
     },
     {
-      id: '44', img: 'assets/east/ny-tower.jpg',
+      id: 44, img: 'assets/east/ny-tower.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -367,7 +367,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'One World Trade Center'
     },
     {
-      id: '45', img: 'assets/east/camp-bball.jpg',
+      id: 45, img: 'assets/east/camp-bball.jpg',
       default: false,
       state: 'NY',
       region: 'East',
@@ -375,7 +375,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Baseball diamond near Saddle Mountain'
     },
     {
-      id: '46', img: 'assets/west/nocal.jpg',
+      id: 46, img: 'assets/west/nocal.jpg',
       default: false,
       state: 'CA',
       region: 'West',
@@ -383,7 +383,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Roadside coastal barn'
     },
     {
-      id: '47', img: 'assets/west/multi.jpg',
+      id: 47, img: 'assets/west/multi.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -391,7 +391,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Total height of 620ft'
     },
     {
-      id: '48', img: 'assets/west/keyhole.jpg',
+      id: 48, img: 'assets/west/keyhole.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -399,7 +399,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'The side of Cape Kiwanda'
     },
     {
-      id: '49', img: 'assets/west/whale.jpg',
+      id: 49, img: 'assets/west/whale.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -407,7 +407,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'The kite festival'
     },
     {
-      id: '50', img: 'assets/west/cal-forest.jpg',
+      id: 50, img: 'assets/west/cal-forest.jpg',
       default: false,
       state: 'CA',
       region: 'West',
@@ -415,7 +415,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Like a cold foggy jungle'
     },
     {
-      id: '51', img: 'assets/west/cannon.jpg',
+      id: 51, img: 'assets/west/cannon.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -423,7 +423,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Insert Goonies reference here'
     },
     {
-      id: '52', img: 'assets/west/coastal-red.jpg',
+      id: 52, img: 'assets/west/coastal-red.jpg',
       default: false,
       state: 'CA',
       region: 'West',
@@ -431,7 +431,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Coastal Redwoods'
     },
     {
-      id: '53', img: 'assets/west/columbia.jpg',
+      id: 53, img: 'assets/west/columbia.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -439,7 +439,7 @@ export class TravelsComponent implements OnInit {
       hideText: "View from the Vista House on top of Thor's Crown"
     },
     {
-      id: '54', img: 'assets/west/golden2.jpg',
+      id: 54, img: 'assets/west/golden2.jpg',
       default: false,
       state: 'CA',
       region: 'West',
@@ -447,7 +447,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Another famous bridge'
     },
     {
-      id: '55', img: 'assets/west/gorge.jpg',
+      id: 55, img: 'assets/west/gorge.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -455,7 +455,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Near Lake Billy Chinook'
     },
     {
-      id: '56', img: 'assets/west/portland.jpg',
+      id: 56, img: 'assets/west/portland.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -463,7 +463,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Oregonians always like to know where they are'
     },
     {
-      id: '57', img: 'assets/west/kite.jpg',
+      id: 57, img: 'assets/west/kite.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -471,7 +471,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Kite festival'
     },
     {
-      id: '58', img: 'assets/west/or-cap.jpg',
+      id: 58, img: 'assets/west/or-cap.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -479,7 +479,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Capital Building of Oregon'
     },
     {
-      id: '59', img: 'assets/west/seattle.jpg',
+      id: 59, img: 'assets/west/seattle.jpg',
       default: false,
       state: 'WA',
       region: 'West',
@@ -487,7 +487,7 @@ export class TravelsComponent implements OnInit {
       hideText: 'Public Market'
     },
     {
-      id: '60', img: 'assets/west/pac-city.jpg',
+      id: 60,img: 'assets/west/pac-city.jpg',
       default: false,
       state: 'OR',
       region: 'West',
@@ -497,8 +497,17 @@ export class TravelsComponent implements OnInit {
   ];
 
   showDefault() {
+    let randomNumArr = [];
+    for (let i = 0; i < 30; i++) {
+      let randomNum = Math.floor(Math.random() * (60 - 1 + 1)) + 1;
+      randomNumArr.push(randomNum);
+    };
+    let uniqueNum = Array.from(new Set(randomNumArr));
+    let twelveUniqueNum = uniqueNum.slice(0, 12);
+    let randomIds = twelveUniqueNum.join(' || ');
+    console.log(twelveUniqueNum)
     this.photoContent.forEach(item => {
-      if(item.default == true) {
+      if(twelveUniqueNum.includes(item.id)) {
         this.showPhotos.push(item);
       }
     })
