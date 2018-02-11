@@ -7,8 +7,8 @@ import { TravelsComponent } from './travels/travels.component';
 import { ProfileComponent } from './profile/profile.component';
 
 const appRoutes: Routes = [
+  { path: '', component: ProfileComponent },
   { path: 'travels', component: TravelsComponent },
-  // { path: 'heroes', component: HeroListComponent },
 ];
 
 @NgModule({

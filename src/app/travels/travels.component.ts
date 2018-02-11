@@ -8,14 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class TravelsComponent implements OnInit {
 
   constructor() { }
-
+  showPhotos = [];
   ngOnInit() {
-    // console.log("travels")
+    this.showDefault();
   }
   photoContent =
   [
     {
       id: '1', img: 'assets/west/silver.jpg',
+      default: true,
       state: 'OR',
       region: 'West',
       location: 'Silver Falls, OR',
@@ -23,6 +24,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '2', img: 'assets/east/ny-night.jpg',
+      default: true,
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
@@ -30,6 +32,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '3', img: 'assets/between/mesa-verde.jpg',
+      default: true,
       state: 'CO',
       region: 'Between',
       location: 'Mesa Verde, CO',
@@ -37,6 +40,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '4', img: 'assets/west/weird.jpg',
+      default: true,
       state: 'OR',
       region: 'West',
       location: 'Portland, OR',
@@ -44,6 +48,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '5', img: 'assets/between/valley-fire.jpg',
+      default: true,
       state: 'NV',
       region: 'Between',
       location: 'Valley of Fire, NV',
@@ -51,6 +56,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '6', img: 'assets/east/ny-bridge.jpg',
+      default: true,
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
@@ -58,6 +64,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '7', img: 'assets/between/grand-canyon.jpg',
+      default: true,
       state: 'AZ',
       region: 'Between',
       location: 'Grand Canyon, AZ',
@@ -65,6 +72,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '8', img: 'assets/between/deethstar.jpg',
+      default: true,
       state: 'NV',
       region: 'Between',
       location: 'Deeth Starr Valley, NV',
@@ -72,6 +80,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '9', img: 'assets/between/nowhere.jpg',
+      default: true,
       state: 'NE',
       region: 'Between',
       location: 'Nowhere or Now Here, NE',
@@ -79,6 +88,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '10', img: 'assets/east/ny-port.jpg',
+      default: true,
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
@@ -86,6 +96,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '11', img: 'assets/between/valley-road.jpg',
+      default: true,
       state: 'AZ',
       region: 'Between',
       location: 'Kaibab Indian Reservation, AZ',
@@ -93,6 +104,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '12', img: 'assets/between/rocky.jpg',
+      default: true,
       state: 'CO',
       region: 'Between',
       location: 'Klamath, CA',
@@ -100,6 +112,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '13', img: 'assets/west/grain.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Salem, OR',
@@ -107,6 +120,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '14', img: 'assets/west/billy-chinnok.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Lake Billy Chinook, OR',
@@ -114,6 +128,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '15', img: 'assets/east/niagra2.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'Buffalo, NY',
@@ -121,6 +136,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '16', img: 'assets/between/nebr.jpg',
+      default: false,
       state: 'NE',
       region: 'Between',
       location: 'Near Nebraska City, NE',
@@ -128,6 +144,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '17', img: 'assets/between/arch.jpg',
+      default: false,
       state: 'NV',
       region: 'Between',
       location: 'Valley of Fire, NV',
@@ -135,6 +152,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '18', img: 'assets/between/butte-road.jpg',
+      default: false,
       state: 'AZ',
       region: 'Between',
       location: 'Kaibab Indian Reservation, AZ',
@@ -142,6 +160,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '19', img: 'assets/between/butte.jpg',
+      default: false,
       state: 'WY',
       region: 'Between',
       location: 'Near Urie, WY',
@@ -149,6 +168,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '20', img: 'assets/between/mesa-verde2.jpg',
+      default: false,
       state: 'CO',
       region: 'Between',
       location: 'Mesa Verde, CO',
@@ -156,6 +176,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '21', img: 'assets/between/monument.jpg',
+      default: false,
       state: 'AZ',
       region: 'Between',
       location: 'Near Red Mesa, AZ',
@@ -163,6 +184,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '22', img: 'assets/between/motel.jpg',
+      default: false,
       state: 'WY',
       region: 'Between',
       location: 'Rawlins, WY',
@@ -170,6 +192,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '23', img: 'assets/between/rock-art.jpg',
+      default: false,
       state: 'NV',
       region: 'Between',
       location: 'Valley of Fire, NV',
@@ -177,6 +200,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '24', img: 'assets/between/salt-flat.jpg',
+      default: false,
       state: 'UT',
       region: 'Between',
       location: 'Great Salt Flats, UT',
@@ -184,6 +208,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '25', img: 'assets/between/smokycreek.jpg',
+      default: false,
       state: 'TN',
       region: 'Between',
       location: 'Gatlinburg, TN',
@@ -191,6 +216,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '26', img: 'assets/between/utah-cap.jpg',
+      default: false,
       state: 'UT',
       region: 'Between',
       location: 'Salt Lake City, UT',
@@ -198,6 +224,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '27', img: 'assets/between/utah.jpg',
+      default: false,
       state: 'UT',
       region: 'Between',
       location: 'Near Emory, UT',
@@ -205,6 +232,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '28', img: 'assets/between/valley-fire2.jpg',
+      default: false,
       state: 'NV',
       region: 'Between',
       location: 'Valley of Fire, NV',
@@ -212,6 +240,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '29', img: 'assets/between/vegas-tower.jpg',
+      default: false,
       state: 'NV',
       region: 'Between',
       location: 'Las Vegas, NV',
@@ -219,6 +248,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '30', img: 'assets/between/zion.jpg',
+      default: false,
       state: 'UT',
       region: 'Between',
       location: 'Zion, UT',
@@ -226,6 +256,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '31', img: 'assets/east/bear.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'Shandaken, NY',
@@ -233,6 +264,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '32', img: 'assets/east/camp-falls.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'Slide Mountain Area, NY',
@@ -240,6 +272,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '33', img: 'assets/east/capital.jpg',
+      default: false,
       state: 'DC',
       region: 'East',
       location: 'Washington DC',
@@ -247,6 +280,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '34', img: 'assets/east/catskills.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'Shandaken, NY',
@@ -254,6 +288,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '35', img: 'assets/east/grand-central.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
@@ -261,6 +296,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '36', img: 'assets/east/montecello.jpg',
+      default: false,
       state: 'VA',
       region: 'East',
       location: 'Charlottesville, VA',
@@ -268,6 +304,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '37', img: 'assets/east/ny-empire.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
@@ -275,6 +312,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '38', img: 'assets/east/camp-ndome.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'Shandaken, NY',
@@ -282,6 +320,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '39', img: 'assets/east/ny-liberty.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
@@ -289,6 +328,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '40', img: 'assets/east/niagra.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'Buffalo, NY',
@@ -296,6 +336,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '41', img: 'assets/east/ny-library.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
@@ -303,6 +344,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '42', img: 'assets/east/ny-skyline.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
@@ -310,6 +352,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '43', img: 'assets/east/penn.jpg',
+      default: false,
       state: 'DC',
       region: 'East',
       location: 'Washington DC',
@@ -317,6 +360,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '44', img: 'assets/east/ny-tower.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
@@ -324,6 +368,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '45', img: 'assets/east/camp-bball.jpg',
+      default: false,
       state: 'NY',
       region: 'East',
       location: 'Shandaken, NY',
@@ -331,6 +376,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '46', img: 'assets/west/nocal.jpg',
+      default: false,
       state: 'CA',
       region: 'West',
       location: 'Redwood Hwy, CA',
@@ -338,6 +384,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '47', img: 'assets/west/multi.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Multnomah Falls, OR',
@@ -345,6 +392,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '48', img: 'assets/west/keyhole.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Pacific City, OR',
@@ -352,6 +400,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '49', img: 'assets/west/whale.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Lincoln City, OR',
@@ -359,6 +408,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '50', img: 'assets/west/cal-forest.jpg',
+      default: false,
       state: 'CA',
       region: 'West',
       location: 'Redwood Forest, CA',
@@ -366,6 +416,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '51', img: 'assets/west/cannon.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Cannon Beach, OR',
@@ -373,6 +424,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '52', img: 'assets/west/coastal-red.jpg',
+      default: false,
       state: 'CA',
       region: 'West',
       location: 'Redwood Forest, CA',
@@ -380,6 +432,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '53', img: 'assets/west/columbia.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Columbia River Gorge, OR',
@@ -387,6 +440,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '54', img: 'assets/west/golden2.jpg',
+      default: false,
       state: 'CA',
       region: 'West',
       location: 'San Fransisco, CA',
@@ -394,6 +448,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '55', img: 'assets/west/gorge.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'High Desert, OR',
@@ -401,6 +456,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '56', img: 'assets/west/portland.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Portland, OR',
@@ -408,6 +464,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '57', img: 'assets/west/kite.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Lincoln City, OR',
@@ -415,6 +472,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '58', img: 'assets/west/or-cap.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Salem, OR',
@@ -422,6 +480,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '59', img: 'assets/west/seattle.jpg',
+      default: false,
       state: 'WA',
       region: 'West',
       location: 'Seattle, WA',
@@ -429,6 +488,7 @@ export class TravelsComponent implements OnInit {
     },
     {
       id: '60', img: 'assets/west/pac-city.jpg',
+      default: false,
       state: 'OR',
       region: 'West',
       location: 'Pacific City, OR',
@@ -436,6 +496,13 @@ export class TravelsComponent implements OnInit {
     },
   ];
 
+  showDefault() {
+    this.photoContent.forEach(item => {
+      if(item.default == true) {
+        this.showPhotos.push(item);
+      }
+    })
+  }
 
   showModal(id) {
     console.log(id)
