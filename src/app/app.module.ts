@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TravelsComponent } from './travels/travels.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const appRoutes: Routes = [
   { path: 'travels', component: TravelsComponent },
@@ -13,7 +14,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    TravelsComponent
+    TravelsComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
