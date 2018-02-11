@@ -10,7 +10,7 @@ export class TravelsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("travels")
+    // console.log("travels")
   }
   photoContent =
   [
