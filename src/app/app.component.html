@@ -21,18 +21,6 @@
   </div>
 </div> -->
 
+<a [routerLink]="['/travels']">travels</a>
 
-  <section class="pictures">
-    <div class="container">
-      <div class="grid">
-
-        <div class="grid__item" *ngFor="let item of photoContent" (click)="showModal(item.id)">
-          <div class="square">
-            <img class="square__pic" src="{{item.img}}" alt="">
-          </div>
-          <div class="grid__item-info">{{item.location}}</div>
-          <!-- <div class="grid__item-infohide">{{item.hideText}}</div> -->
-        </div>
-      </div>
-    </div>
-  </section>
+<router-outlet></router-outlet>
