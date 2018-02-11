@@ -502,7 +502,11 @@ export class TravelsComponent implements OnInit {
         this.showPhotos.push(item);
       }
     })
-  }
+  };
+
+  showSortedState() {};
+  showSortedRegion() {};
+  showAllPhotos() {};
 
   showModal(id) {
     console.log(id)
