@@ -503,11 +503,10 @@ export class TravelsComponent implements OnInit {
       randomNumArr.push(randomNum);
     };
     let uniqueNum = Array.from(new Set(randomNumArr));
-    let twelveUniqueNum = uniqueNum.slice(0, 12);
-    let randomIds = twelveUniqueNum.join(' || ');
-    console.log(twelveUniqueNum)
+    let randomUniqueNum = uniqueNum.slice(0, 12);
+    // console.log(randomUniqueNum)
     this.photoContent.forEach(item => {
-      if(twelveUniqueNum.includes(item.id)) {
+      if(randomUniqueNum.includes(item.id)) {
         this.showPhotos.push(item);
       }
     })
@@ -517,7 +516,14 @@ export class TravelsComponent implements OnInit {
   showSortedRegion() {};
   showAllPhotos() {};
 
-  showModal(id) {
-    console.log(id)
+  showModal(item) {
+    document.getElementById('modal').style.display = 'block';
+    document.getElementById('modal-card').style.display = 'block';
+    console.log(item)
   }
+
+  closeModal() {
+    document.getElementById('modal').style.display = 'none';
+    document.getElementById('modal-card').style.display = 'none';
+  };
 }
