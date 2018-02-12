@@ -9,6 +9,7 @@ export class TravelsComponent implements OnInit {
 
   constructor() { }
   showPhotos = [];
+  modalObj = {};
   ngOnInit() {
     this.showDefault();
   }
@@ -517,6 +518,7 @@ export class TravelsComponent implements OnInit {
   showAllPhotos() {};
 
   showModal(item) {
+    this.modalObj = item;
     document.getElementById('modal').style.display = 'block';
     document.getElementById('modal-card').style.display = 'block';
     console.log(item)
