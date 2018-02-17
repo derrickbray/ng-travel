@@ -79,7 +79,7 @@
 
 #modal-sort {
   position: fixed;
-  /*display: none;*/
+  display: none;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -94,6 +94,38 @@
   background: black;
   color: white;
   font-size: 1.5rem;
+}
+
+.modal-sort__body {
+  padding: 1.5rem;
+}
+
+.sort-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-choice + label {
+  color: grey;
+  font-style: italic;
+}
+
+#sort-region:not(:checked) ~ #region-select {
+    display: none;
+}
+
+#sort-state:not(:checked) ~ #state-select {
+    display: none;
+}
+
+.sort-choice:checked + label {
+  /*text-decoration: underline;*/
+  color: black;
+  font-style: normal;
+}
+
+.sort-select {
+  display: block;
 }
 
 .exit {

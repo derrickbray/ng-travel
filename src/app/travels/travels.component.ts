@@ -518,7 +518,7 @@ export class TravelsComponent implements OnInit {
 
   showModalEdit() {
     document.getElementById('modal').style.display = 'block';
-    document.getElementById('modal-edit').style.display = 'block';
+    document.getElementById('modal-sort').style.display = 'block';
   };
 
   showModal(item) {
