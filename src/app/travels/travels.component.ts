@@ -505,7 +505,6 @@ export class TravelsComponent implements OnInit {
     };
     let uniqueNum = Array.from(new Set(randomNumArr));
     let randomUniqueNum = uniqueNum.slice(0, 12);
-    // console.log(randomUniqueNum)
     this.photoContent.forEach(item => {
       if(randomUniqueNum.includes(item.id)) {
         this.showPhotos.push(item);
@@ -517,11 +516,16 @@ export class TravelsComponent implements OnInit {
   showSortedRegion() {};
   showAllPhotos() {};
 
+  showModalEdit() {
+    document.getElementById('modal').style.display = 'block';
+    document.getElementById('modal-edit').style.display = 'block';
+  };
+
   showModal(item) {
     this.modalObj = item;
     document.getElementById('modal').style.display = 'block';
     document.getElementById('modal-card').style.display = 'block';
-    console.log(item)
+    // console.log(item)
   }
 
   closeModal() {
