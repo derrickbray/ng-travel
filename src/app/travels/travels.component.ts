@@ -9,9 +9,13 @@ export class TravelsComponent implements OnInit {
 
   constructor() { }
   showPhotos = [];
+  allRegions = [];
+  allStates = [];
   modalObj = {};
   ngOnInit() {
     this.showDefault();
+    this.findAllRegions();
+    this.findAllStates();
   }
   photoContent =
   [
@@ -512,8 +516,30 @@ export class TravelsComponent implements OnInit {
     })
   };
 
+  findAllRegions() {
+    let regions = [];
+    this.photoContent.forEach((item) => {
+      regions.push(item.region);
+    });
+    let sortedRegions = Array.from(new Set(regions));
+    // console.log(sortedRegions)
+    this.allRegions = sortedRegions;
+  };
+
+  findAllStates() {
+    let states = [];
+    this.photoContent.forEach((item) => {
+      states.push(item.state);
+    });
+    let sortedStates = Array.from(new Set(states));
+    // console.log(sortedStates);
+    this.allStates = sortedStates;
+  };
+
   showSortedState() {};
-  showSortedRegion() {};
+  showSortedRegion(region) {
+    console.log(region)
+  };
   showAllPhotos() {};
 
   showModalEdit() {

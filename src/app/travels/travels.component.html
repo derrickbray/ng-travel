@@ -19,10 +19,21 @@
           <div class="">
             <input type="radio" class="sort-choice" id="sort-region" name="sort" value="region">
             <label for="sort-region">By Region</label>
-            <select class="sort-select" id="region-select">
-              <option value="">hey</option>
-              <option value="">there</option>
-            </select>
+
+            <div class="dropdown" id="region-drop">
+              <h2 class="dropdown-title">
+                <div class="show-sort">
+                  <i class="arrow down" id="arrow"></i>
+                </div>
+              </h2>
+              <div id="dropdown-box" class="dropdown-box">
+                <div class="dropdown-box__item" *ngFor="let region of allRegions">
+                  <div (click)="showSortedRegion(region)">{{region}}</div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
           <div class="">
             <input type="radio" class="sort-choice" id="sort-state" name="sort" value="state">
@@ -37,8 +48,9 @@
             <label for="sort-all">All</label>
           </div>
         </div>
-        <div>
-          <button type="submit">Sort</button>
+        <div class="btn-box">
+          <div class="modal-btn">Cancel</div>
+          <div class="modal-btn default">Sort</div>
         </div>
       </div>
     </div>
