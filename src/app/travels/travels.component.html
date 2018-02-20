@@ -12,29 +12,7 @@
     <div class="modal-sort__body">
       <div class="modal-sort__inputbox">
         <div class="sort-inputs">
-          <div class="">
-            <input type="radio" class="sort-choice" id="sort-random" name="sort" value="random" checked>
-            <label for="sort-random">Random</label>
-          </div>
-          <div class="">
-            <input type="radio" class="sort-choice" id="sort-region" name="sort" value="region">
-            <label for="sort-region">By Region</label>
 
-            <div class="dropdown" id="region-drop">
-              <h2 class="dropdown-title">
-                <div class="show-sort">
-                  <i class="arrow down" id="arrow"></i>
-                </div>
-              </h2>
-              <div id="dropdown-box" class="dropdown-box">
-                <div class="dropdown-box__item" *ngFor="let region of allRegions">
-                  <div (click)="showSortedRegion(region)">{{region}}</div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
           <div class="">
             <input type="radio" class="sort-choice" id="sort-state" name="sort" value="state">
             <label for="sort-state">By State</label>
@@ -43,11 +21,35 @@
               <option value="">there</option>
             </select>
           </div>
+
+          <div class="">
+            <input type="radio" class="sort-choice" id="sort-region" name="sort" value="region">
+            <label for="sort-region">By Region</label>
+            <div class="dropdown" id="region-drop">
+              <div id="dropdown-box" class="dropdown-box">
+                <div class="dropdown-box__item" *ngFor="let region of allRegions">
+                  <div (click)="showSortedRegion(region)">{{region}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <input type="radio" class="sort-choice" id="sort-random" name="sort" value="random">
+            <label for="sort-random">Random</label>
+          </div>
+
           <div class="">
             <input type="radio" class="sort-choice" id="sort-all" name="sort" value="all">
             <label for="sort-all">All</label>
           </div>
+
+          <div class="">
+            <input type="radio" class="sort-choice" id="search" name="sort" value="search">
+            <label for="search">By Keyword</label>
+          </div>
         </div>
+
         <div class="btn-box">
           <div class="modal-btn">Cancel</div>
           <div class="modal-btn default">Sort</div>
