@@ -132,7 +132,7 @@
     display: none;
 }
 
-#sort-state:not(:checked) ~ #state-select {
+#sort-state:not(:checked) ~ #state-drop {
     display: none;
 }
 

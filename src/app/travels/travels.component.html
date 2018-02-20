@@ -16,10 +16,13 @@
           <div class="">
             <input type="radio" class="sort-choice" id="sort-state" name="sort" value="state">
             <label for="sort-state">By State</label>
-            <select class="sort-select" id="state-select">
-              <option value="">hey</option>
-              <option value="">there</option>
-            </select>
+            <div class="dropdown" id="state-drop">
+              <div id="dropdown-box" class="dropdown-box">
+                <div class="dropdown-box__item" *ngFor="let state of allStates">
+                  <div (click)="showSortedState(state)">{{state}}</div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="">

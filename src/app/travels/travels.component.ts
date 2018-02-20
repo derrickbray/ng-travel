@@ -11,12 +11,14 @@ export class TravelsComponent implements OnInit {
   showPhotos = [];
   allRegions = [];
   allStates = [];
+  allKeywords =[];
   modalObj = {};
   ngOnInit() {
     this.showDefault();
     this.findAllRegions();
     this.findAllStates();
   }
+
   photoContent =
   [
     {
@@ -536,10 +538,14 @@ export class TravelsComponent implements OnInit {
     this.allStates = sortedStates;
   };
 
-  showSortedState() {};
+  showSortedState(state) {
+    console.log(state)
+  };
+
   showSortedRegion(region) {
     console.log(region)
   };
+
   showAllPhotos() {};
 
   showModalEdit() {
@@ -551,7 +557,6 @@ export class TravelsComponent implements OnInit {
     this.modalObj = item;
     document.getElementById('modal').style.display = 'block';
     document.getElementById('modal-card').style.display = 'block';
-    // console.log(item)
   }
 
   closeModal() {
