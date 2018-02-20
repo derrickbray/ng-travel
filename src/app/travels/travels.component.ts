@@ -504,18 +504,35 @@ export class TravelsComponent implements OnInit {
   ];
 
   showDefault() {
+    let here = this;
     let randomNumArr = [];
+    let randomArr = [];
+    // console.log(this.photoContent.length)
     for (let i = 0; i < 30; i++) {
-      let randomNum = Math.floor(Math.random() * (60 - 1 + 1)) + 1;
+      let randomNum = Math.floor(Math.random() * (this.photoContent.length - 1 + 1)) + 1;
       randomNumArr.push(randomNum);
     };
     let uniqueNum = Array.from(new Set(randomNumArr));
     let randomUniqueNum = uniqueNum.slice(0, 12);
     this.photoContent.forEach(item => {
       if(randomUniqueNum.includes(item.id)) {
-        this.showPhotos.push(item);
+        randomArr.push(item);
       }
     })
+    function shuffle(array) {
+      var currentIndex = array.length, temporaryValue, randomIndex;
+      while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+      here.showPhotos = array;
+      // console.log(here.showPhotos)
+    }
+    shuffle(randomArr);
   };
 
   findAllRegions() {
@@ -546,12 +563,14 @@ export class TravelsComponent implements OnInit {
     console.log(region)
   };
 
-  showAllPhotos() {};
-
-  showModalEdit() {
-    document.getElementById('modal').style.display = 'block';
-    document.getElementById('modal-sort').style.display = 'block';
+  showAllPhotos() {
+    this.showPhotos = this.photoContent;
   };
+
+  // showModalEdit() {
+  //   document.getElementById('modal').style.display = 'block';
+  //   document.getElementById('modal-sort').style.display = 'block';
+  // };
 
   showModal(item) {
     this.modalObj = item;

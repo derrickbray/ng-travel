@@ -145,12 +145,35 @@
   cursor: pointer;
 }
 
+.sort-settings {
+  display: flex;
+  justify-content: space-around;
+}
+
 .sort {
-  cursor: pointer;
+  padding: 0.3rem;
+  font-size: 1.2rem;
 }
 
 .sort-select {
   display: block;
+}
+
+.dropdown-box {
+  position: absolute;
+  background: white;
+  z-index: 3;
+  width: 10%;
+  border: 1px solid lightgrey;
+}
+
+.dropdown-box__item {
+  padding: 0.3rem;
+}
+
+.dropdown-box__item:hover {
+  background: black;
+  color: white;
 }
 
 .btn-box {

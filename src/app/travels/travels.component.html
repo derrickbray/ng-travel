@@ -1,68 +1,57 @@
 <div id="modal"></div>
-  <div id="modal-card">
-    <div class="top-container">
-      <div class="exit" (click)="closeModal()">X</div>
-    </div>
-    <div class="img-container">
-      <img class="modal-img" src="{{modalObj.img}}" alt="">
-    </div>
+<div id="modal-card">
+  <div class="top-container">
+    <div class="exit" (click)="closeModal()">X</div>
   </div>
-  <div id="modal-sort">
-    <div class="modal-sort__top">Sort By</div>
-    <div class="modal-sort__body">
-      <div class="modal-sort__inputbox">
-        <div class="sort-inputs">
+  <div class="img-container">
+    <img class="modal-img" src="{{modalObj.img}}" alt="">
+  </div>
+</div>
+<section class="pictures">
+  <div class="container">
+    <div class="sort-settings">
 
-          <div class="">
-            <input type="radio" class="sort-choice" id="sort-state" name="sort" value="state">
-            <label for="sort-state">By State</label>
-            <div class="dropdown" id="state-drop">
-              <div id="dropdown-box" class="dropdown-box">
-                <div class="dropdown-box__item" *ngFor="let state of allStates">
-                  <div (click)="showSortedState(state)">{{state}}</div>
-                </div>
-              </div>
-            </div>
+    <div class="sort">Sort by</div>
+    <div class="">
+      <input type="radio" class="sort-choice" id="sort-state" name="sort" value="state">
+      <label for="sort-state">By State</label>
+      <div class="dropdown" id="state-drop">
+        <div id="dropdown-box" class="dropdown-box">
+          <div class="dropdown-box__item" *ngFor="let state of allStates">
+            <div (click)="showSortedState(state)">{{state}}</div>
           </div>
-
-          <div class="">
-            <input type="radio" class="sort-choice" id="sort-region" name="sort" value="region">
-            <label for="sort-region">By Region</label>
-            <div class="dropdown" id="region-drop">
-              <div id="dropdown-box" class="dropdown-box">
-                <div class="dropdown-box__item" *ngFor="let region of allRegions">
-                  <div (click)="showSortedRegion(region)">{{region}}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="">
-            <input type="radio" class="sort-choice" id="sort-random" name="sort" value="random">
-            <label for="sort-random">Random</label>
-          </div>
-
-          <div class="">
-            <input type="radio" class="sort-choice" id="sort-all" name="sort" value="all">
-            <label for="sort-all">All</label>
-          </div>
-
-          <div class="">
-            <input type="radio" class="sort-choice" id="search" name="sort" value="search">
-            <label for="search">By Keyword</label>
-          </div>
-        </div>
-
-        <div class="btn-box">
-          <div class="modal-btn">Cancel</div>
-          <div class="modal-btn default">Sort</div>
         </div>
       </div>
     </div>
+
+    <div class="">
+      <input type="radio" class="sort-choice" id="sort-region" name="sort" value="region">
+      <label for="sort-region">By Region</label>
+      <div class="dropdown" id="region-drop">
+        <div id="dropdown-box" class="dropdown-box">
+          <div class="dropdown-box__item" *ngFor="let region of allRegions">
+            <div (click)="showSortedRegion(region)">{{region}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="" (click)="showDefault()">
+      <input type="radio" class="sort-choice" id="sort-random" name="sort" value="random">
+      <label for="sort-random">Random</label>
+    </div>
+
+    <div class="" (click)="showAllPhotos()">
+      <input type="radio" class="sort-choice" id="sort-all" name="sort" value="all">
+      <label for="sort-all">All</label>
+    </div>
+
+    <div class="">
+      <input type="radio" class="sort-choice" id="search" name="sort" value="search">
+      <label for="search">By Keyword</label>
+    </div>
   </div>
-<section class="pictures">
-  <div class="container">
-    <div class="sort" (click)="showModalEdit()">Sort by</div>
+
     <div class="grid">
       <div class="grid__item" *ngFor="let item of showPhotos" (click)="showModal(item)">
         <div class="square">
