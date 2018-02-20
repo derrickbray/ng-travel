@@ -507,7 +507,6 @@ export class TravelsComponent implements OnInit {
     let here = this;
     let randomNumArr = [];
     let randomArr = [];
-    // console.log(this.photoContent.length)
     for (let i = 0; i < 30; i++) {
       let randomNum = Math.floor(Math.random() * (this.photoContent.length - 1 + 1)) + 1;
       randomNumArr.push(randomNum);
@@ -530,7 +529,6 @@ export class TravelsComponent implements OnInit {
         array[randomIndex] = temporaryValue;
       }
       here.showPhotos = array;
-      // console.log(here.showPhotos)
     }
     shuffle(randomArr);
   };
@@ -541,7 +539,6 @@ export class TravelsComponent implements OnInit {
       regions.push(item.region);
     });
     let sortedRegions = Array.from(new Set(regions));
-    // console.log(sortedRegions)
     this.allRegions = sortedRegions;
   };
 
@@ -551,7 +548,6 @@ export class TravelsComponent implements OnInit {
       states.push(item.state);
     });
     let sortedStates = Array.from(new Set(states));
-    // console.log(sortedStates);
     this.allStates = sortedStates;
   };
 
@@ -566,11 +562,6 @@ export class TravelsComponent implements OnInit {
   showAllPhotos() {
     this.showPhotos = this.photoContent;
   };
-
-  // showModalEdit() {
-  //   document.getElementById('modal').style.display = 'block';
-  //   document.getElementById('modal-sort').style.display = 'block';
-  // };
 
   showModal(item) {
     this.modalObj = item;
