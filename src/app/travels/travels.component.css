@@ -216,4 +216,5 @@
 
 .modal-img {
   object-fit: cover;
+  border: 2px solid white;
 }

@@ -112,7 +112,7 @@ export class TravelsComponent implements OnInit {
     {
       id: 12, img: 'assets/between/rocky.jpg',
       default: true,
-      state: 'CO',
+      state: 'CA',
       region: 'Between',
       location: 'Klamath, CA',
       hideText: 'Exactly what you think the Pacific should be'
@@ -552,10 +552,26 @@ export class TravelsComponent implements OnInit {
   };
 
   showSortedState(state) {
+    this.showPhotos = [];
+    this.photoContent.forEach((photo) => {
+      if(photo.state === state) {
+        this.showPhotos.push(photo);
+      };
+    });
+    let stateSort = (<HTMLInputElement>document.getElementById('sort-state'));
+    stateSort.checked = false;
     console.log(state)
   };
 
   showSortedRegion(region) {
+    this.showPhotos = [];
+    this.photoContent.forEach((photo) => {
+      if(photo.region === region) {
+        this.showPhotos.push(photo)
+      }
+    })
+    let regionSort = (<HTMLInputElement>document.getElementById('sort-region'));
+    regionSort.checked = false;
     console.log(region)
   };
 

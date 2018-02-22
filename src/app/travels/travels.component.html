@@ -12,7 +12,7 @@
     <div class="sort-settings">
 
     <div class="sort">Sort by</div>
-    <div class="">
+    <div id="state-radio">
       <input type="radio" class="sort-choice" id="sort-state" name="sort" value="state">
       <label for="sort-state">By State</label>
       <div class="dropdown" id="state-drop">
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div class="">
+    <div id="region-radio">
       <input type="radio" class="sort-choice" id="sort-region" name="sort" value="region">
       <label for="sort-region">By Region</label>
       <div class="dropdown" id="region-drop">
@@ -36,17 +36,17 @@
       </div>
     </div>
 
-    <div class="" (click)="showDefault()">
+    <div id="" (click)="showDefault()">
       <input type="radio" class="sort-choice" id="sort-random" name="sort" value="random">
       <label for="sort-random">Random</label>
     </div>
 
-    <div class="" (click)="showAllPhotos()">
+    <div id="" (click)="showAllPhotos()">
       <input type="radio" class="sort-choice" id="sort-all" name="sort" value="all">
       <label for="sort-all">All</label>
     </div>
 
-    <div class="">
+    <div id="">
       <input type="radio" class="sort-choice" id="search" name="sort" value="search">
       <label for="search">By Keyword</label>
     </div>
