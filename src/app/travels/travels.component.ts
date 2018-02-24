@@ -733,6 +733,78 @@ export class TravelsComponent implements OnInit {
       location: 'Near Grand Canyon, AZ',
       hideText: ""
     },
+    {
+      id: 90, img: 'assets/between/gas-art.jpg',
+      default: false,
+      state: 'NM',
+      region: 'Between',
+      location: 'Somewhere in New Mexico, NM',
+      hideText: ""
+    },
+    {
+      id: 91, img: 'assets/between/salmon.jpg',
+      default: false,
+      state: 'NM',
+      region: 'Between',
+      location: 'Salmon Ruins, NM',
+      hideText: ""
+    },
+    {
+      id: 92, img: 'assets/between/baby-j-confused.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebonon, TN',
+      hideText: ""
+    },
+    {
+      id: 93, img: 'assets/west/voodoo.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Portland, OR',
+      hideText: ""
+    },
+    {
+      id: 94, img: 'assets/west/judah-park1.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Salem, OR',
+      hideText: ""
+    },
+    {
+      id: 95, img: 'assets/west/tay-park1.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Salem, OR',
+      hideText: ""
+    },
+    {
+      id: 96, img: 'assets/west/tay-park2.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Salem, OR',
+      hideText: ""
+    },
+    {
+      id: 97, img: 'assets/west/tay-park3.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Salem, OR',
+      hideText: ""
+    },
+    {
+      id: 98, img: 'assets/west/tay-park4.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Salem, OR',
+      hideText: ""
+    },
   ];
 
   showDefault() {
