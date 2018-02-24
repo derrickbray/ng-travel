@@ -19,6 +19,96 @@ export class TravelsComponent implements OnInit {
     this.findAllStates();
   }
 
+  shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    this.showPhotos = array;
+  }
+
+  showDefault() {
+    let here = this;
+    let randomNumArr = [];
+    let randomArr = [];
+    for (let i = 0; i < this.photoContent.length; i++) {
+      let randomNum = Math.floor(Math.random() * (this.photoContent.length - 1 + 1)) + 1;
+      randomNumArr.push(randomNum);
+    };
+    let uniqueNum = Array.from(new Set(randomNumArr));
+    let randomUniqueNum = uniqueNum.slice(0, 18);
+    this.photoContent.forEach(item => {
+      if(randomUniqueNum.includes(item.id)) {
+        randomArr.push(item);
+      }
+    })
+    this.shuffle(randomArr);
+  };
+
+  findAllRegions() {
+    let regions = [];
+    this.photoContent.forEach((item) => {
+      regions.push(item.region);
+    });
+    let sortedRegions = Array.from(new Set(regions));
+    this.allRegions = sortedRegions;
+  };
+
+  findAllStates() {
+    let states = [];
+    this.photoContent.forEach((item) => {
+      states.push(item.state);
+    });
+    let sortedStates = Array.from(new Set(states));
+    this.allStates = sortedStates;
+  };
+
+  showSortedState(state) {
+    this.showPhotos = [];
+    let showStatesArr = [];
+    this.photoContent.forEach((photo) => {
+      if(photo.state === state) {
+        showStatesArr.push(photo);
+      };
+    });
+    let stateSort = (<HTMLInputElement>document.getElementById('sort-state'));
+    stateSort.checked = false;
+    this.shuffle(showStatesArr);
+  };
+
+  showSortedRegion(region) {
+    this.showPhotos = [];
+    let showRegionsArr = [];
+    this.photoContent.forEach((photo) => {
+      if(photo.region === region) {
+        showRegionsArr.push(photo)
+      }
+    })
+    let regionSort = (<HTMLInputElement>document.getElementById('sort-region'));
+    regionSort.checked = false;
+    this.shuffle(showRegionsArr);
+  };
+
+  showAllPhotos() {
+    this.shuffle(this.photoContent);
+  };
+
+  showModal(item) {
+    this.modalObj = item;
+    document.getElementById('modal').style.display = 'block';
+    document.getElementById('modal-card').style.display = 'block';
+  }
+
+  closeModal() {
+    document.getElementById('modal').style.display = 'none';
+    document.getElementById('modal-card').style.display = 'none';
+  };
+
   photoContent =
   [
     {
@@ -569,6 +659,7 @@ export class TravelsComponent implements OnInit {
       id: 69, img: 'assets/between/tickle-taylor.jpg',
       default: false,
       state: 'TN',
+
       region: 'Between',
       location: 'Lebanon, TN',
       hideText: 'So much it hurt'
@@ -941,92 +1032,14 @@ export class TravelsComponent implements OnInit {
       location: 'Sequoia, CA',
       hideText: ""
     },
+    {
+      id: 116, img: 'assets/west/shasta.jpg',
+      default: false,
+      state: 'CA',
+      region: 'West',
+      location: 'Mt. Shasta, CA',
+      hideText: ""
+    },
   ];
 
-  showDefault() {
-    let here = this;
-    let randomNumArr = [];
-    let randomArr = [];
-    for (let i = 0; i < 30; i++) {
-      let randomNum = Math.floor(Math.random() * (this.photoContent.length - 1 + 1)) + 1;
-      randomNumArr.push(randomNum);
-    };
-    let uniqueNum = Array.from(new Set(randomNumArr));
-    let randomUniqueNum = uniqueNum.slice(0, 12);
-    this.photoContent.forEach(item => {
-      if(randomUniqueNum.includes(item.id)) {
-        randomArr.push(item);
-      }
-    })
-    function shuffle(array) {
-      var currentIndex = array.length, temporaryValue, randomIndex;
-      while (0 !== currentIndex) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-      }
-      here.showPhotos = array;
-    }
-    shuffle(randomArr);
-  };
-
-  findAllRegions() {
-    let regions = [];
-    this.photoContent.forEach((item) => {
-      regions.push(item.region);
-    });
-    let sortedRegions = Array.from(new Set(regions));
-    this.allRegions = sortedRegions;
-  };
-
-  findAllStates() {
-    let states = [];
-    this.photoContent.forEach((item) => {
-      states.push(item.state);
-    });
-    let sortedStates = Array.from(new Set(states));
-    this.allStates = sortedStates;
-  };
-
-  showSortedState(state) {
-    this.showPhotos = [];
-    this.photoContent.forEach((photo) => {
-      if(photo.state === state) {
-        this.showPhotos.push(photo);
-      };
-    });
-    let stateSort = (<HTMLInputElement>document.getElementById('sort-state'));
-    stateSort.checked = false;
-    console.log(state)
-  };
-
-  showSortedRegion(region) {
-    this.showPhotos = [];
-    this.photoContent.forEach((photo) => {
-      if(photo.region === region) {
-        this.showPhotos.push(photo)
-      }
-    })
-    let regionSort = (<HTMLInputElement>document.getElementById('sort-region'));
-    regionSort.checked = false;
-    console.log(region)
-  };
-
-  showAllPhotos() {
-    this.showPhotos = this.photoContent;
-  };
-
-  showModal(item) {
-    this.modalObj = item;
-    document.getElementById('modal').style.display = 'block';
-    document.getElementById('modal-card').style.display = 'block';
-  }
-
-  closeModal() {
-    document.getElementById('modal').style.display = 'none';
-    document.getElementById('modal-card').style.display = 'none';
-  };
 }
