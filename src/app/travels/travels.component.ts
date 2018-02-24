@@ -805,6 +805,142 @@ export class TravelsComponent implements OnInit {
       location: 'Salem, OR',
       hideText: ""
     },
+    {
+      id: 99, img: 'assets/west/salem-front.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Salem, OR',
+      hideText: ""
+    },
+    {
+      id: 100, img: 'assets/west/bird-attack.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Salem, OR',
+      hideText: ""
+    },
+    {
+      id: 101, img: 'assets/west/hung-low.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Portland, OR',
+      hideText: ""
+    },
+    {
+      id: 102, img: 'assets/west/chinook-lake.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Lake Billy Chinook, OR',
+      hideText: ""
+    },
+    {
+      id: 103, img: 'assets/west/adore-silver.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Silver Falls, OR',
+      hideText: ""
+    },
+    {
+      id: 104, img: 'assets/west/bad-weather.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Cape Foulweather, OR',
+      hideText: ""
+    },
+    {
+      id: 105, img: 'assets/west/devil-punch.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Devils Punchbowl, OR',
+      hideText: ""
+    },
+    {
+      id: 106, img: 'assets/west/weber.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Frank Lloyd Wright house, Silverton, OR',
+      hideText: ""
+    },
+    {
+      id: 107, img: 'assets/west/smith-rock.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Smith Rock, OR',
+      hideText: ""
+    },
+    {
+      id: 108, img: 'assets/west/lava-balls.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Newberry National Volcanic Monument, OR',
+      hideText: ""
+    },
+    {
+      id: 109, img: 'assets/west/seattle-wheel.jpg',
+      default: false,
+      state: 'WA',
+      region: 'West',
+      location: 'Seattle, OR',
+      hideText: ""
+    },
+    {
+      id: 110, img: 'assets/west/sf-port.jpg',
+      default: false,
+      state: 'CA',
+      region: 'West',
+      location: 'San Fransisco, CA',
+      hideText: ""
+    },
+    {
+      id: 111, img: 'assets/west/sf-1915.jpg',
+      default: false,
+      state: 'CA',
+      region: 'West',
+      location: 'San Fransisco, CA',
+      hideText: ""
+    },
+    {
+      id: 112, img: 'assets/west/sf-ferry.jpg',
+      default: false,
+      state: 'CA',
+      region: 'West',
+      location: 'San Fransisco, CA',
+      hideText: ""
+    },
+    {
+      id: 113, img: 'assets/west/valley-oil.jpg',
+      default: false,
+      state: 'CA',
+      region: 'West',
+      location: 'Central Valley, CA',
+      hideText: ""
+    },
+    {
+      id: 114, img: 'assets/west/cal-sign.jpg',
+      default: false,
+      state: 'CA',
+      region: 'West',
+      location: 'Barstow, CA',
+      hideText: ""
+    },
+    {
+      id: 115, img: 'assets/west/kids-sherman.jpg',
+      default: false,
+      state: 'CA',
+      region: 'West',
+      location: 'Sequoia, CA',
+      hideText: ""
+    },
   ];
 
   showDefault() {
