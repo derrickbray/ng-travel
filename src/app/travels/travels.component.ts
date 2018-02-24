@@ -56,6 +56,7 @@ export class TravelsComponent implements OnInit {
       regions.push(item.region);
     });
     let sortedRegions = Array.from(new Set(regions));
+    sortedRegions.sort();
     this.allRegions = sortedRegions;
   };
 
@@ -65,6 +66,7 @@ export class TravelsComponent implements OnInit {
       states.push(item.state);
     });
     let sortedStates = Array.from(new Set(states));
+    sortedStates.sort();
     this.allStates = sortedStates;
   };
 
@@ -981,7 +983,7 @@ export class TravelsComponent implements OnInit {
       default: false,
       state: 'WA',
       region: 'West',
-      location: 'Seattle, OR',
+      location: 'Seattle, WA',
       hideText: ""
     },
     {
