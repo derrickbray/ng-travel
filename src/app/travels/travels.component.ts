@@ -494,12 +494,244 @@ export class TravelsComponent implements OnInit {
       hideText: 'Public Market'
     },
     {
-      id: 60,img: 'assets/west/pac-city.jpg',
+      id: 60, img: 'assets/west/pac-city.jpg',
       default: false,
       state: 'OR',
       region: 'West',
       location: 'Pacific City, OR',
       hideText: 'View of Cape Kiwanda with Haystack rock behind'
+    },
+    {
+      id: 61, img: 'assets/east/chess.jpg',
+      default: false,
+      state: 'VA',
+      region: 'East',
+      location: 'Charlottesville, VA',
+      hideText: 'Some deep thinkers'
+    },
+    {
+      id: 62, img: 'assets/west/dog-warning.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Redmond, OR',
+      hideText: 'I think that they really mean it'
+    },
+    {
+      id: 63, img: 'assets/west/fence-warning.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Otter Rock, OR',
+      hideText: 'I think that they mean it'
+    },
+    {
+      id: 64, img: 'assets/west/sandy-kids.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Pacific City, OR',
+      hideText: 'Lots of blue'
+    },
+    {
+      id: 65, img: 'assets/west/spiral-tree.jpg',
+      default: false,
+      state: 'CA',
+      region: 'West',
+      location: 'Coastal Redwoods, CA',
+      hideText: 'Just a little guy'
+    },
+    {
+      id: 66, img: 'assets/west/sleepless.jpg',
+      default: false,
+      state: 'WA',
+      region: 'West',
+      location: 'Seattle, WA',
+      hideText: 'Right on the lake'
+    },
+    {
+      id: 67, img: 'assets/between/tay-medal.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebanon, TN',
+      hideText: 'Winner, winner! Pizza dinner'
+    },
+    {
+      id: 68, img: 'assets/between/tickle-judah.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebanon, TN',
+      hideText: 'So much it hurt'
+    },
+    {
+      id: 69, img: 'assets/between/tickle-taylor.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebanon, TN',
+      hideText: 'So much it hurt'
+    },
+    {
+      id: 70, img: 'assets/between/zombie-judah.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebanon, TN',
+      hideText: "You can run, but you can't hide"
+    },
+    {
+      id: 71, img: 'assets/between/judah-sleep.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebanon, TN',
+      hideText: "Because swinging is hard"
+    },
+    {
+      id: 72, img: 'assets/between/tay-sleep.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebanon, TN',
+      hideText: "If I slept like this I wouldn't be able to walk for days"
+    },
+    {
+      id: 73, img: 'assets/between/bye-judah.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebanon, TN',
+      hideText: "Bye, Felicia"
+    },
+    {
+      id: 74, img: 'assets/between/judah-hat.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebanon, TN',
+      hideText: "Go Cards"
+    },
+    {
+      id: 75, img: 'assets/between/seeno.jpg',
+      default: false,
+      state: 'UT',
+      region: 'Between',
+      location: 'Zion, UT',
+      hideText: ""
+    },
+    {
+      id: 76, img: 'assets/between/out-reno.jpg',
+      default: false,
+      state: 'NV',
+      region: 'Between',
+      location: 'Reno, NV',
+      hideText: "Outside Reno is really pretty"
+    },
+    {
+      id: 77, img: 'assets/between/fire-art2.jpg',
+      default: false,
+      state: 'NV',
+      region: 'Between',
+      location: 'Valley of Fire, NV',
+      hideText: "Petroglyphs"
+    },
+    {
+      id: 78, img: 'assets/between/fire-art3.jpg',
+      default: false,
+      state: 'NV',
+      region: 'Between',
+      location: 'Valley of Fire, NV',
+      hideText: "Petroglyphs"
+    },
+    {
+      id: 79, img: 'assets/between/fire-art4.jpg',
+      default: false,
+      state: 'NV',
+      region: 'Between',
+      location: 'Valley of Fire, NV',
+      hideText: "Petroglyphs"
+    },
+    {
+      id: 80, img: 'assets/between/road-red.jpg',
+      default: false,
+      state: 'NV',
+      region: 'Between',
+      location: 'Valley of Fire, NV',
+      hideText: "Wilderness"
+    },
+    {
+      id: 81, img: 'assets/between/judah-zion.jpg',
+      default: false,
+      state: 'UT',
+      region: 'Between',
+      location: 'Zion, UT',
+      hideText: ""
+    },
+    {
+      id: 82, img: 'assets/between/dbl-rain.jpg',
+      default: false,
+      state: 'UT',
+      region: 'Between',
+      location: 'Zion, UT',
+      hideText: "Double rainbow"
+    },
+    {
+      id: 83, img: 'assets/between/fire-red.jpg',
+      default: false,
+      state: 'NV',
+      region: 'Between',
+      location: 'Valley of Fire, NV',
+      hideText: "Wilderness"
+    },
+    {
+      id: 84, img: 'assets/between/fuck-trump.jpg',
+      default: false,
+      state: 'NV',
+      region: 'Between',
+      location: 'Las Vegas, NV',
+      hideText: "Downtown"
+    },
+    {
+      id: 85, img: 'assets/between/grand1.jpg',
+      default: false,
+      state: 'AZ',
+      region: 'Between',
+      location: 'Grand Canyon, AZ',
+      hideText: ""
+    },
+    {
+      id: 86, img: 'assets/between/grand2.jpg',
+      default: false,
+      state: 'AZ',
+      region: 'Between',
+      location: 'Grand Canyon, AZ',
+      hideText: ""
+    },
+    {
+      id: 87, img: 'assets/between/grand3.jpg',
+      default: false,
+      state: 'AZ',
+      region: 'Between',
+      location: 'Grand Canyon, AZ',
+      hideText: ""
+    },
+    {
+      id: 88, img: 'assets/between/canyonland.jpg',
+      default: false,
+      state: 'AZ',
+      region: 'Between',
+      location: 'Near Grand Canyon, AZ',
+      hideText: ""
+    },
+    {
+      id: 89, img: 'assets/between/az-homes.jpg',
+      default: false,
+      state: 'AZ',
+      region: 'Between',
+      location: 'Near Grand Canyon, AZ',
+      hideText: ""
     },
   ];
 
