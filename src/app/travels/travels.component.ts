@@ -33,7 +33,7 @@ export class TravelsComponent implements OnInit {
   }
 
   showDefault() {
-    let here = this;
+    // let here = this;
     let randomNumArr = [];
     let randomArr = [];
     for (let i = 0; i < this.photoContent.length; i++) {
@@ -42,11 +42,13 @@ export class TravelsComponent implements OnInit {
     };
     let uniqueNum = Array.from(new Set(randomNumArr));
     let randomUniqueNum = uniqueNum.slice(0, 18);
+    console.log(randomUniqueNum.length)
     this.photoContent.forEach(item => {
       if(randomUniqueNum.includes(item.id)) {
         randomArr.push(item);
-      }
-    })
+      };
+    });
+    console.log(randomArr.length)
     this.shuffle(randomArr);
   };
 
@@ -1064,6 +1066,142 @@ export class TravelsComponent implements OnInit {
       state: 'DC',
       region: 'East',
       location: 'Washington DC',
+      hideText: ""
+    },
+    {
+      id: 120, img: 'assets/east/judah-mom.jpg',
+      default: false,
+      state: 'GA',
+      region: 'East',
+      location: 'St. Simon, GA',
+      hideText: ""
+    },
+    {
+      id: 121, img: 'assets/east/adore.jpg',
+      default: false,
+      state: 'ME',
+      region: 'East',
+      location: 'Old Orchard Beach, ME',
+      hideText: ""
+    },
+    {
+      id: 122, img: 'assets/east/jeet-yet.jpg',
+      default: false,
+      state: 'RI',
+      region: 'East',
+      location: 'Newport, RI',
+      hideText: ""
+    },
+    {
+      id: 123, img: 'assets/east/judah-breakers.jpg',
+      default: false,
+      state: 'RI',
+      region: 'East',
+      location: 'Newport, RI',
+      hideText: ""
+    },
+    {
+      id: 124, img: 'assets/east/flatiron.jpg',
+      default: false,
+      state: 'NY',
+      region: 'East',
+      location: 'New York, NY',
+      hideText: ""
+    },
+    {
+      id: 125, img: 'assets/east/empire-state-bldg.jpg',
+      default: false,
+      state: 'NY',
+      region: 'East',
+      location: 'New York, NY',
+      hideText: ""
+    },
+    {
+      id: 126, img: 'assets/east/empire-st-inside.jpg',
+      default: false,
+      state: 'NY',
+      region: 'East',
+      location: 'New York, NY',
+      hideText: ""
+    },
+    {
+      id: 127, img: 'assets/east/little-italy.jpg',
+      default: false,
+      state: 'NY',
+      region: 'East',
+      location: 'New York, NY',
+      hideText: ""
+    },
+    {
+      id: 128, img: 'assets/east/woodstock-sign.jpg',
+      default: false,
+      state: 'NY',
+      region: 'East',
+      location: 'Woodstock, NY',
+      hideText: ""
+    },
+    {
+      id: 129, img: 'assets/east/j+d-falls.jpg',
+      default: false,
+      state: 'NY',
+      region: 'East',
+      location: 'Niagra Falls, NY',
+      hideText: ""
+    },
+    {
+      id: 130, img: 'assets/east/tay-shan.jpg',
+      default: false,
+      state: 'VA',
+      region: 'East',
+      location: 'Blue Ridge Mts, VA',
+      hideText: ""
+    },
+    {
+      id: 131, img: 'assets/west/lincoln-beach.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Lincoln City, OR',
+      hideText: ""
+    },
+    {
+      id: 132, img: 'assets/west/salem-ivy.jpg',
+      default: false,
+      state: 'OR',
+      region: 'West',
+      location: 'Salem, OR',
+      hideText: ""
+    },
+    {
+      id: 132, img: 'assets/west/fresno.jpg',
+      default: false,
+      state: 'CA',
+      region: 'West',
+      location: 'Fresno, CA',
+      hideText: ""
+    },
+    {
+      id: 132, img: 'assets/west/honeysuckle-cal.jpg',
+      default: false,
+      state: 'CA',
+      region: 'West',
+      location: 'Near Reno Junction, CA',
+      hideText: ""
+    },
+    {
+      id: 133, img: 'assets/between/judah-gangster.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebanon, TN',
+      hideText: ""
+    },
+    {
+      id: 134, img: 'assets/between/fam-w-logan.jpg',
+      default: false,
+      state: 'TN',
+      region: 'Between',
+      location: 'Lebanon, TN',
       hideText: ""
     },
   ];
