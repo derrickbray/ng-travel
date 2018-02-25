@@ -13,6 +13,7 @@ export class TravelsComponent implements OnInit {
   allStates = [];
   allKeywords =[];
   modalObj = {};
+
   ngOnInit() {
     this.showDefault();
     this.findAllRegions();
@@ -24,7 +25,6 @@ export class TravelsComponent implements OnInit {
     while (0 !== currentIndex) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
-
       temporaryValue = array[currentIndex];
       array[currentIndex] = array[randomIndex];
       array[randomIndex] = temporaryValue;
@@ -1040,6 +1040,30 @@ export class TravelsComponent implements OnInit {
       state: 'CA',
       region: 'West',
       location: 'Mt. Shasta, CA',
+      hideText: ""
+    },
+    {
+      id: 117, img: 'assets/east/char-draw.jpg',
+      default: false,
+      state: 'VA',
+      region: 'East',
+      location: 'Charlottesville, VA',
+      hideText: ""
+    },
+    {
+      id: 118, img: 'assets/east/mont-lava.jpg',
+      default: false,
+      state: 'VA',
+      region: 'East',
+      location: 'Charlottesville, VA',
+      hideText: ""
+    },
+    {
+      id: 119, img: 'assets/east/library-fam.jpg',
+      default: false,
+      state: 'DC',
+      region: 'East',
+      location: 'Washington DC',
       hideText: ""
     },
   ];
