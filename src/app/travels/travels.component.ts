@@ -33,7 +33,6 @@ export class TravelsComponent implements OnInit {
   }
 
   showDefault() {
-    // this is running twice -- dont know why
     let randomNumArr = [];
     let randomArr = [];
     for (let i = 0; i < this.photoContent.length; i++) {
@@ -41,15 +40,12 @@ export class TravelsComponent implements OnInit {
       randomNumArr.push(randomNum);
     };
     let uniqueNum = Array.from(new Set(randomNumArr));
-    // console.log(uniqueNum)
     let randomUniqueNum = uniqueNum.slice(0, 18);
-    console.log(randomUniqueNum.length)
     this.photoContent.forEach(item => {
       if(randomUniqueNum.includes(item.id)) {
         randomArr.push(item);
       };
     });
-    console.log(randomArr.length)
     this.shuffle(randomArr);
   };
 
@@ -1306,7 +1302,7 @@ export class TravelsComponent implements OnInit {
       hideText: ""
     },
     {
-      id: 132, img: 'assets/west/fresno.jpg',
+      id: 133, img: 'assets/west/fresno.jpg',
       default: false,
       state: 'CA',
       region: 'West',
@@ -1315,7 +1311,7 @@ export class TravelsComponent implements OnInit {
       hideText: ""
     },
     {
-      id: 132, img: 'assets/west/honeysuckle-cal.jpg',
+      id: 134, img: 'assets/west/honeysuckle-cal.jpg',
       default: false,
       state: 'CA',
       region: 'West',
@@ -1324,7 +1320,7 @@ export class TravelsComponent implements OnInit {
       hideText: ""
     },
     {
-      id: 133, img: 'assets/between/judah-gangster.jpg',
+      id: 135, img: 'assets/between/judah-gangster.jpg',
       default: false,
       state: 'TN',
       region: 'Between',
@@ -1333,7 +1329,7 @@ export class TravelsComponent implements OnInit {
       hideText: ""
     },
     {
-      id: 134, img: 'assets/between/fam-w-logan.jpg',
+      id: 136, img: 'assets/between/fam-w-logan.jpg',
       default: false,
       state: 'TN',
       region: 'Between',
