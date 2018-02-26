@@ -12,7 +12,7 @@ export class TravelsComponent implements OnInit {
   allRegions = [];
   allStates = [];
   allKeywords =[];
-  modalObj = {};
+  modalObj:any = {};
 
   ngOnInit() {
     this.showDefault();
