@@ -119,7 +119,6 @@
 }
 
 .sort-choice:checked {
-  /*color: black;*/
   border: 6px solid black;
 }
 
@@ -163,8 +162,8 @@
   position: absolute;
   background: white;
   z-index: 3;
-  width: 10%;
   border: 1px solid lightgrey;
+  cursor: pointer;
 }
 
 .dropdown-box__item {
