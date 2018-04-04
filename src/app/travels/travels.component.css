@@ -135,6 +135,10 @@
     display: none;
 }
 
+#sort-keyword:not(:checked) ~ #keyword-drop {
+    display: none;
+}
+
 .sort-choice:checked + label {
   color: black;
   font-style: normal;

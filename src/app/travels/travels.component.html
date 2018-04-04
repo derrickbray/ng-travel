@@ -12,6 +12,7 @@
     <div class="sort-settings">
 
     <div class="sort">Sort by</div>
+
     <div id="state-radio">
       <input type="radio" class="sort-choice" id="sort-state" name="sort" value="state">
       <label for="sort-state">By State</label>
@@ -31,6 +32,18 @@
         <div id="dropdown-box" class="dropdown-box">
           <div class="dropdown-box__item" *ngFor="let region of allRegions">
             <div (click)="showSortedRegion(region)">{{region}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="keyword-radio">
+      <input type="radio" class="sort-choice" id="sort-keyword" name="sort" value="keyword">
+      <label for="sort-keyword">By Keyword</label>
+      <div class="dropdown" id="keyword-drop">
+        <div id="dropdown-box" class="dropdown-box">
+          <div class="dropdown-box__item" *ngFor="let keyword of allKeywords">
+            <div (click)="showSortedKeywords(keyword)">{{keyword}}</div>
           </div>
         </div>
       </div>

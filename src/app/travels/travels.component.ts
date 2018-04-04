@@ -18,6 +18,7 @@ export class TravelsComponent implements OnInit {
     this.showDefault();
     this.findAllRegions();
     this.findAllStates();
+    this.findAllKeywords();
   }
 
   shuffle(array) {
@@ -69,6 +70,25 @@ export class TravelsComponent implements OnInit {
     this.allStates = sortedStates;
   };
 
+  findAllKeywords() {
+    let keywords = [];
+    let allKeywords = [];
+    let arrAllKeywords = [];
+    let sortedKeywords = [];
+    this.photoContent.forEach((item) => {
+      keywords.push(item.keywords);
+    });
+    keywords.forEach((eachKeyword) => {
+      eachKeyword.forEach((item) => {
+        arrAllKeywords.push(item);
+      });
+    });
+    let keys = Array.from(new Set(arrAllKeywords));
+    keys.sort();
+    this.allKeywords = keys;
+    console.log(keys)
+  };
+
   showSortedState(state) {
     this.showPhotos = [];
     let showStatesArr = [];
@@ -95,8 +115,8 @@ export class TravelsComponent implements OnInit {
     this.shuffle(showRegionsArr);
   };
 
-  showKeyword() {
-
+  showSortedKeyword(keyword) {
+    //needs to do the same as the others but use includes to find which arr's include keyword
   };
 
   showAllPhotos() {
@@ -1301,7 +1321,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Salem, OR',
-      keywords: [],
+      keywords: ['City'],
       hideText: ""
     },
     {
@@ -1310,7 +1330,7 @@ export class TravelsComponent implements OnInit {
       state: 'CA',
       region: 'West',
       location: 'Fresno, CA',
-      keywords: [],
+      keywords: ['Desert', 'Nature'],
       hideText: ""
     },
     {
@@ -1319,7 +1339,7 @@ export class TravelsComponent implements OnInit {
       state: 'CA',
       region: 'West',
       location: 'Near Reno Junction, CA',
-      keywords: [],
+      keywords: ['Desert', 'Mountains', 'Nature'],
       hideText: ""
     },
     {
@@ -1328,7 +1348,7 @@ export class TravelsComponent implements OnInit {
       state: 'TN',
       region: 'Between',
       location: 'Lebanon, TN',
-      keywords: [],
+      keywords: ['Family'],
       hideText: ""
     },
     {
@@ -1337,7 +1357,7 @@ export class TravelsComponent implements OnInit {
       state: 'TN',
       region: 'Between',
       location: 'Lebanon, TN',
-      keywords: [],
+      keywords: ['Family'],
       hideText: ""
     },
   ];
