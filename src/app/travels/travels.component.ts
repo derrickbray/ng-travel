@@ -95,6 +95,10 @@ export class TravelsComponent implements OnInit {
     this.shuffle(showRegionsArr);
   };
 
+  showKeyword() {
+
+  };
+
   showAllPhotos() {
     this.shuffle(this.photoContent);
   };
@@ -118,7 +122,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Silver Falls, OR',
-      keywords: [],
+      keywords: ['Waterfalls', 'Nature', 'Favorites'],
       hideText: 'The South Falls'
     },
     {
@@ -127,7 +131,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'View from top of the Empire State Building'
     },
     {
@@ -136,7 +140,7 @@ export class TravelsComponent implements OnInit {
       state: 'CO',
       region: 'Between',
       location: 'Mesa Verde, CO',
-      keywords: [],
+      keywords: ['Ruins', 'Desert'],
       hideText: 'The Cliff Palace'
     },
     {
@@ -145,7 +149,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Portland, OR',
-      keywords: [],
+      keywords: ['Huh', 'City'],
       hideText: 'Near the original Voodoo Doughnuts'
     },
     {
@@ -154,7 +158,7 @@ export class TravelsComponent implements OnInit {
       state: 'NV',
       region: 'Between',
       location: 'Valley of Fire, NV',
-      keywords: [],
+      keywords: ['Nature', 'Desert'],
       hideText: 'The Ocean bottom from millions of years ago'
     },
     {
@@ -163,7 +167,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
-      keywords: [],
+      keywords: ['Bridges', 'City'],
       hideText: "That's a Famous Bridge"
     },
     {
@@ -172,7 +176,7 @@ export class TravelsComponent implements OnInit {
       state: 'AZ',
       region: 'Between',
       location: 'Grand Canyon, AZ',
-      keywords: [],
+      keywords: ['Nature', 'Desert', 'Canyons'],
       hideText: 'View from the South Rim'
     },
     {
@@ -181,7 +185,7 @@ export class TravelsComponent implements OnInit {
       state: 'NV',
       region: 'Between',
       location: 'Deeth Starr Valley, NV',
-      keywords: [],
+      keywords: ['No Where', 'Desert'],
       hideText: 'I guess if you live in the middle of nowhere you can call it whatever you want'
     },
     {
@@ -190,7 +194,7 @@ export class TravelsComponent implements OnInit {
       state: 'NE',
       region: 'Between',
       location: 'Nowhere or Now Here, NE',
-      keywords: [],
+      keywords: ['No Where'],
       hideText: 'Embrace the feeling'
     },
     {
@@ -199,7 +203,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'From Liberty Island'
     },
     {
@@ -208,7 +212,7 @@ export class TravelsComponent implements OnInit {
       state: 'AZ',
       region: 'Between',
       location: 'Kaibab Indian Reservation, AZ',
-      keywords: [],
+      keywords: ['Desert', 'Canyons', 'Nature'],
       hideText: 'On the way to the Grand Canyon'
     },
     {
@@ -217,7 +221,7 @@ export class TravelsComponent implements OnInit {
       state: 'CA',
       region: 'Between',
       location: 'Klamath, CA',
-      keywords: [],
+      keywords: ['Ocean', 'Nature'],
       hideText: 'Exactly what you think the Pacific should be'
     },
     {
@@ -226,7 +230,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Salem, OR',
-      keywords: [],
+      keywords: ['Huh'],
       hideText: 'Downtown near Riverfront Park'
     },
     {
@@ -235,7 +239,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Lake Billy Chinook, OR',
-      keywords: [],
+      keywords: ['Desert', 'Nature'],
       hideText: 'Water does not mess around'
     },
     {
@@ -244,7 +248,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'Buffalo, NY',
-      keywords: [],
+      keywords: ['Waterfalls', 'Nature'],
       hideText: 'The only time Canada seems trashy, (like putting a McDonalds on the side on the Grand Canyon)'
     },
     {
@@ -262,7 +266,7 @@ export class TravelsComponent implements OnInit {
       state: 'NV',
       region: 'Between',
       location: 'Valley of Fire, NV',
-      keywords: [],
+      keywords: ['Nature', 'Desert'],
       hideText: 'Arch Rock'
     },
     {
@@ -271,7 +275,7 @@ export class TravelsComponent implements OnInit {
       state: 'AZ',
       region: 'Between',
       location: 'Kaibab Indian Reservation, AZ',
-      keywords: [],
+      keywords: ['Desert', 'Canyons'],
       hideText: 'On the way to the Grand Canyon'
     },
     {
@@ -280,7 +284,7 @@ export class TravelsComponent implements OnInit {
       state: 'WY',
       region: 'Between',
       location: 'Near Urie, WY',
-      keywords: [],
+      keywords: ['Desert'],
       hideText: 'On the way to SLC'
     },
     {
@@ -289,7 +293,7 @@ export class TravelsComponent implements OnInit {
       state: 'CO',
       region: 'Between',
       location: 'Mesa Verde, CO',
-      keywords: [],
+      keywords: ['Ruins', 'Desert'],
       hideText: 'In the Cliff Palace'
     },
     {
@@ -298,7 +302,7 @@ export class TravelsComponent implements OnInit {
       state: 'AZ',
       region: 'Between',
       location: 'Near Red Mesa, AZ',
-      keywords: [],
+      keywords: ['Desert', 'Canyons'],
       hideText: 'Near Monument Valley'
     },
     {
@@ -307,7 +311,7 @@ export class TravelsComponent implements OnInit {
       state: 'WY',
       region: 'Between',
       location: 'Rawlins, WY',
-      keywords: [],
+      keywords: ['Huh'],
       hideText: 'This motel still uses keys, no keycards'
     },
     {
@@ -316,7 +320,7 @@ export class TravelsComponent implements OnInit {
       state: 'NV',
       region: 'Between',
       location: 'Valley of Fire, NV',
-      keywords: [],
+      keywords: ['Desert', 'Ruins', 'Petroglyphs'],
       hideText: 'Petroglyphs at Atlatl Rock'
     },
     {
@@ -325,7 +329,7 @@ export class TravelsComponent implements OnInit {
       state: 'UT',
       region: 'Between',
       location: 'Great Salt Flats, UT',
-      keywords: [],
+      keywords: ['No Where', 'Desert'],
       hideText: 'Whole lot of nothing'
     },
     {
@@ -334,7 +338,7 @@ export class TravelsComponent implements OnInit {
       state: 'TN',
       region: 'Between',
       location: 'Gatlinburg, TN',
-      keywords: [],
+      keywords: ['Family'],
       hideText: 'Gatlinburg is beautiful -- away from the strip'
     },
     {
@@ -343,7 +347,7 @@ export class TravelsComponent implements OnInit {
       state: 'UT',
       region: 'Between',
       location: 'Salt Lake City, UT',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'State Capital Building SLC'
     },
     {
@@ -352,7 +356,7 @@ export class TravelsComponent implements OnInit {
       state: 'UT',
       region: 'Between',
       location: 'Near Emory, UT',
-      keywords: [],
+      keywords: ['No Where', 'Nature'],
       hideText: 'The hills east of SLC'
     },
     {
@@ -361,7 +365,7 @@ export class TravelsComponent implements OnInit {
       state: 'NV',
       region: 'Between',
       location: 'Valley of Fire, NV',
-      keywords: [],
+      keywords: ['Desert', 'Canyons'],
       hideText: "The Valley of Fire is the most desolate place I've ever seen"
     },
     {
@@ -370,7 +374,7 @@ export class TravelsComponent implements OnInit {
       state: 'NV',
       region: 'Between',
       location: 'Las Vegas, NV',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'Paris in America'
     },
     {
@@ -379,7 +383,7 @@ export class TravelsComponent implements OnInit {
       state: 'UT',
       region: 'Between',
       location: 'Zion, UT',
-      keywords: [],
+      keywords: ['Mountains', 'Canyons', 'Nature'],
       hideText: 'Watchman Mountain'
     },
     {
@@ -388,7 +392,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'Shandaken, NY',
-      keywords: [],
+      keywords: ['Nature'],
       hideText: 'Curious little bear'
     },
     {
@@ -397,7 +401,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'Slide Mountain Area, NY',
-      keywords: [],
+      keywords: ['Waterfalls'],
       hideText: 'I forgot the name of these falls'
     },
     {
@@ -406,7 +410,7 @@ export class TravelsComponent implements OnInit {
       state: 'DC',
       region: 'East',
       location: 'Washington DC',
-      keywords: [],
+      keywords: ['City', 'Family'],
       hideText: 'My wife holding up the government'
     },
     {
@@ -415,7 +419,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'Shandaken, NY',
-      keywords: [],
+      keywords: ['Mountains'],
       hideText: 'View from the North Dome of Saddle Mountain'
     },
     {
@@ -424,7 +428,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'Grand Central Station'
     },
     {
@@ -433,7 +437,7 @@ export class TravelsComponent implements OnInit {
       state: 'VA',
       region: 'East',
       location: 'Charlottesville, VA',
-      keywords: [],
+      keywords: ['Family'],
       hideText: "Thomas Jefferson's Monticello"
     },
     {
@@ -442,7 +446,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'Empire State Building'
     },
     {
@@ -451,7 +455,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'Shandaken, NY',
-      keywords: [],
+      keywords: ['Mountains', 'Nature'],
       hideText: 'View of the North Dome of Saddle Mountain'
     },
     {
@@ -460,7 +464,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'Lady Liberty'
     },
     {
@@ -469,7 +473,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'Buffalo, NY',
-      keywords: [],
+      keywords: ['Waterfalls', 'Nature'],
       hideText: 'In line for the Hurricane Deck at the Cave of the Winds, Niagra Falls'
     },
     {
@@ -478,7 +482,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'New York Public Library'
     },
     {
@@ -487,7 +491,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'Lower Manhattan'
     },
     {
@@ -496,7 +500,7 @@ export class TravelsComponent implements OnInit {
       state: 'DC',
       region: 'East',
       location: 'Washington DC',
-      keywords: [],
+      keywords: ['City'],
       hideText: '1600 Pennsylvania Ave'
     },
     {
@@ -505,7 +509,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'New York City, NY',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'One World Trade Center'
     },
     {
@@ -514,7 +518,7 @@ export class TravelsComponent implements OnInit {
       state: 'NY',
       region: 'East',
       location: 'Shandaken, NY',
-      keywords: [],
+      keywords: ['Mountains', 'Huh'],
       hideText: 'Baseball diamond near Saddle Mountain'
     },
     {
@@ -523,7 +527,7 @@ export class TravelsComponent implements OnInit {
       state: 'CA',
       region: 'West',
       location: 'Redwood Hwy, CA',
-      keywords: [],
+      keywords: ['No Where'],
       hideText: 'Roadside coastal barn'
     },
     {
@@ -532,7 +536,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Multnomah Falls, OR',
-      keywords: [],
+      keywords: ['Waterfalls', 'Nature'],
       hideText: 'Total height of 620ft'
     },
     {
@@ -541,7 +545,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Pacific City, OR',
-      keywords: [],
+      keywords: ['Ocean', 'Nature'],
       hideText: 'The side of Cape Kiwanda'
     },
     {
@@ -550,7 +554,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Lincoln City, OR',
-      keywords: [],
+      keywords: ['Ocean', 'Huh'],
       hideText: 'The kite festival'
     },
     {
@@ -559,7 +563,7 @@ export class TravelsComponent implements OnInit {
       state: 'CA',
       region: 'West',
       location: 'Redwood Forest, CA',
-      keywords: [],
+      keywords: ['Nature'],
       hideText: 'Like a cold foggy jungle'
     },
     {
@@ -568,7 +572,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Cannon Beach, OR',
-      keywords: [],
+      keywords: ['Ocean', 'Nature'],
       hideText: 'Insert Goonies reference here'
     },
     {
@@ -577,7 +581,7 @@ export class TravelsComponent implements OnInit {
       state: 'CA',
       region: 'West',
       location: 'Redwood Forest, CA',
-      keywords: [],
+      keywords: ['Nature'],
       hideText: 'Coastal Redwoods'
     },
     {
@@ -586,7 +590,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Columbia River Gorge, OR',
-      keywords: [],
+      keywords: ['Nature'],
       hideText: "View from the Vista House on top of Thor's Crown"
     },
     {
@@ -595,7 +599,7 @@ export class TravelsComponent implements OnInit {
       state: 'CA',
       region: 'West',
       location: 'San Fransisco, CA',
-      keywords: [],
+      keywords: ['Bridges', 'City'],
       hideText: 'Another famous bridge'
     },
     {
@@ -604,7 +608,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'High Desert, OR',
-      keywords: [],
+      keywords: ['Nature', 'Desert'],
       hideText: 'Near Lake Billy Chinook'
     },
     {
@@ -613,7 +617,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Portland, OR',
-      keywords: [],
+      keywords: ['City', 'Huh'],
       hideText: 'Oregonians always like to know where they are'
     },
     {
@@ -622,7 +626,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Lincoln City, OR',
-      keywords: [],
+      keywords: ['Ocean', 'Huh'],
       hideText: 'Kite festival'
     },
     {
@@ -631,7 +635,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Salem, OR',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'Capital Building of Oregon'
     },
     {
@@ -640,7 +644,7 @@ export class TravelsComponent implements OnInit {
       state: 'WA',
       region: 'West',
       location: 'Seattle, WA',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'Public Market'
     },
     {
@@ -649,7 +653,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Pacific City, OR',
-      keywords: [],
+      keywords: ['Ocean'],
       hideText: 'View of Cape Kiwanda with Haystack rock behind'
     },
     {
@@ -658,7 +662,7 @@ export class TravelsComponent implements OnInit {
       state: 'VA',
       region: 'East',
       location: 'Charlottesville, VA',
-      keywords: [],
+      keywords: ['Family'],
       hideText: 'Some deep thinkers'
     },
     {
@@ -667,7 +671,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Redmond, OR',
-      keywords: [],
+      keywords: ['Huh'],
       hideText: 'I think that they really mean it'
     },
     {
@@ -676,7 +680,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Otter Rock, OR',
-      keywords: [],
+      keywords: ['Ocean', 'Huh'],
       hideText: 'I think that they mean it'
     },
     {
@@ -685,7 +689,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Pacific City, OR',
-      keywords: [],
+      keywords: ['Ocean', 'Family'],
       hideText: 'Lots of blue'
     },
     {
@@ -694,7 +698,7 @@ export class TravelsComponent implements OnInit {
       state: 'CA',
       region: 'West',
       location: 'Coastal Redwoods, CA',
-      keywords: [],
+      keywords: ['Nature'],
       hideText: 'Just a little guy'
     },
     {
@@ -703,7 +707,7 @@ export class TravelsComponent implements OnInit {
       state: 'WA',
       region: 'West',
       location: 'Seattle, WA',
-      keywords: [],
+      keywords: ['City'],
       hideText: 'Right on the lake'
     },
     {
@@ -1028,7 +1032,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Lake Billy Chinook, OR',
-      keywords: [],
+      keywords: ['Desert', 'Nature'],
       hideText: ""
     },
     {
