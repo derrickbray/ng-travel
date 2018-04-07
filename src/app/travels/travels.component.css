@@ -63,7 +63,7 @@
   height: 100vh;
   z-index: 20;
   background: #999;
-  filter: opacity(.6);
+  filter: opacity(.9);
 }
 
 #modal-card {
@@ -84,6 +84,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
+  /*max-width: */
+  max-height: 95vh;
   z-index: 25;
   overflow: auto;
   background: white;
@@ -213,11 +215,13 @@
 }
 
 .img-container {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   max-height: 80vh;
 }
 
 .modal-img {
-  object-fit: cover;
-  border: 2px solid white;
+  object-fit: contain;
+  /*border: 2px solid white;*/
 }

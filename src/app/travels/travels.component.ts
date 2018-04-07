@@ -115,8 +115,18 @@ export class TravelsComponent implements OnInit {
     this.shuffle(showRegionsArr);
   };
 
-  showSortedKeyword(keyword) {
+  showSortedKeywords(keyword) {
     //needs to do the same as the others but use includes to find which arr's include keyword
+    this.showPhotos = [];
+    let showKeyArr = [];
+    this.photoContent.forEach((photo) => {
+      if(photo.keywords.includes(keyword)) {
+        showKeyArr.push(photo);
+      };
+    });
+    let keySort = (<HTMLInputElement>document.getElementById('sort-keyword'));
+    keySort.checked = false;
+    this.shuffle(showKeyArr);
   };
 
   showAllPhotos() {
@@ -142,7 +152,7 @@ export class TravelsComponent implements OnInit {
       state: 'OR',
       region: 'West',
       location: 'Silver Falls, OR',
-      keywords: ['Waterfalls', 'Nature', 'Favorites'],
+      keywords: ['Waterfalls', 'Nature'],
       hideText: 'The South Falls'
     },
     {
